@@ -10,6 +10,36 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/count.js":
+/*!*************************!*\
+  !*** ./src/js/count.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ count)\n/* harmony export */ });\nfunction count(x, y) {\n  return x - y;\n}\n\n//# sourceURL=webpack://webpack5-demo/./src/js/count.js?");
+
+/***/ }),
+
+/***/ "./src/js/sum.js":
+/*!***********************!*\
+  !*** ./src/js/sum.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ sum)\n/* harmony export */ });\nfunction sum() {\n  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n    args[_key] = arguments[_key];\n  }\n  return args.reduce(function (p, c) {\n    return p + c;\n  }, 0);\n}\n\n//# sourceURL=webpack://webpack5-demo/./src/js/sum.js?");
+
+/***/ }),
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_count__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/count */ \"./src/js/count.js\");\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/sum */ \"./src/js/sum.js\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _css_iconfont_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/iconfont.css */ \"./src/css/iconfont.css\");\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./less/index.less */ \"./src/less/index.less\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _stylus_index_styl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./stylus/index.styl */ \"./src/stylus/index.styl\");\n\n\n\n// 想要 webpack 打包资源，必须引入\n\n\n\n\n\n\n// var a = 1;  // eslint 报错\nconsole.log((0,_js_count__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1, 2));\nconsole.log((0,_js_sum__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(1, 2, 3, 4));\n\n//# sourceURL=webpack://webpack5-demo/./src/main.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/less/index.less":
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/less/index.less ***!
@@ -200,36 +230,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/js/count.js":
-/*!*************************!*\
-  !*** ./src/js/count.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ count)\n/* harmony export */ });\nfunction count(x, y) {\n    return x - y;\n}\n\n\n//# sourceURL=webpack://webpack5-demo/./src/js/count.js?");
-
-/***/ }),
-
-/***/ "./src/js/sum.js":
-/*!***********************!*\
-  !*** ./src/js/sum.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ sum)\n/* harmony export */ });\nfunction sum(...args) {\n    return args.reduce((p, c) => p + c, 0);\n}\n\n//# sourceURL=webpack://webpack5-demo/./src/js/sum.js?");
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_count__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/count */ \"./src/js/count.js\");\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/sum */ \"./src/js/sum.js\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _css_iconfont_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/iconfont.css */ \"./src/css/iconfont.css\");\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./less/index.less */ \"./src/less/index.less\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _stylus_index_styl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./stylus/index.styl */ \"./src/stylus/index.styl\");\n\n\n\n// 想要 webpack 打包资源，必须引入\n\n\n\n\n\n\nconsole.log((0,_js_count__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1, 2));\nconsole.log((0,_js_sum__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(1, 2, 3, 4));\n\n//# sourceURL=webpack://webpack5-demo/./src/main.js?");
-
-/***/ }),
-
 /***/ "./src/fonts/iconfont.ttf?t=1687170735382":
 /*!************************************************!*\
   !*** ./src/fonts/iconfont.ttf?t=1687170735382 ***!
@@ -256,7 +256,7 @@ eval("module.exports = __webpack_require__.p + \"static/medias/iconfont.836b48.w
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"5bb5d50483e4c0f11079.woff?t=1687170735382\";\n\n//# sourceURL=webpack://webpack5-demo/./src/fonts/iconfont.woff?");
+eval("module.exports = __webpack_require__.p + \"static/medias/iconfont.5bb5d5.woff?t=1687170735382\";\n\n//# sourceURL=webpack://webpack5-demo/./src/fonts/iconfont.woff?");
 
 /***/ }),
 

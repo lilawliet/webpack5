@@ -8,5 +8,6 @@ import "./less/index.less";
 import "./scss/index.scss";
 import "./stylus/index.styl";
 
+// var a = 1;  // eslint 报错
 console.log(count(1, 2));
 console.log(sum(1, 2, 3, 4));

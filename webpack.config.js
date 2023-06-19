@@ -1,4 +1,6 @@
 const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // 入口文件
@@ -74,10 +76,38 @@ module.exports = {
                 generator: {
                     filename: 'static/medias/[name].[hash:6][ext][query]'
                 }
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules)/,  // 排除 node_modules 目录
+                loader: 'babel-loader',
+                // use: {   // 另一种写法
+                //     loader: 'babel-loader',
+                //     options: {
+                //         presets: ['@babel/preset-env']
+                //     }
+                // }
             }
         ]
     },
     // 插件
     plugins: [
+        // eslint 插件
+        new ESLintPlugin({
+            context: path.resolve(__dirname, '../src'),
+        }),
+        // html 自动引入
+        new HtmlWebpackPlugin({
+            // 新的 html 文件会基于 index.html 模板文件来创建
+            // 特点：1.结构一致 2.自动引入打包后的资源文件
+            template: './public/index.html', // 模板文件
+            filename: 'index.html', // 打包后的文件名
+            title: 'webpack5', // html 文件的 title 标签
+            minify: { // 压缩 html 文件
+                collapseWhitespace: true, // 去除空格
+                removeComments: true, // 去除注释
+            }
+        }),
+        
     ]
 }

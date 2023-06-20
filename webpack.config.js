@@ -109,5 +109,22 @@ module.exports = {
             }
         }),
         
-    ]
+    ],
+    devServer: {
+    //   static: {
+    //     directory: path.join(__dirname, 'public'),
+    //   },
+      host: 'localhost',
+      port: 9000,
+      open: true,
+    //   compress: true, // 开启 gzip 压缩
+      client: {
+        logging: 'info',
+        overlay: true,  // 当出现编译错误或警告时，在浏览器中显示全屏覆盖。
+        // 如果只想现实错误： errors=true, warnings=false
+        // errors: true, 
+        // warnings: false,
+        progress: true,  // 编译进度
+      },
+    },
 }

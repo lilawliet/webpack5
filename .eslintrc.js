@@ -1,6 +1,6 @@
 module.exports = {
     // 继承 Eslint 规则
-    extends: ['eslint:recommended'],
+    extends: ['eslint:recommended', 'prettier'],
     env: {
         node: true, // 启用 node 环境全局变量
         browser: true, // 启用浏览器环境全局变量
